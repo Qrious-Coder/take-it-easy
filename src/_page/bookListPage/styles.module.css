@@ -1,0 +1,21 @@
+
+.bookCtn {
+  background-color: black;
+}
+
+.addBtn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.addBtn:hover{
+  background-color:#002ead;
+  transition: 0.7s;
+}
