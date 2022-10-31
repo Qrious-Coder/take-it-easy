@@ -1,0 +1,11 @@
+import axios from "axios"
+
+const url = 'http://localhost:5000/items';
+
+export function postItemsAPI (params) {
+  return axios.post( url, params)
+}
+
+export function getItemsAPI () {
+  return axios.get( url)
+}

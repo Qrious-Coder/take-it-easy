@@ -1,0 +1,13 @@
+.profileCtn {
+  height: 100vh;
+  background-color: cadetblue;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    height: 5vh;
+    background-color: black;
+    color: antiquewhite;
+  }
+}

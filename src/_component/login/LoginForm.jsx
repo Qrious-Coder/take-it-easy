@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios';
 
 const LoginForm = () => {
   const navigate = useNavigate()
@@ -10,6 +11,7 @@ const LoginForm = () => {
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value})
   }
+  //* ------------------ fetch ***/
   const handleSubmit = (e) => {
     const url = 'http://localhost:5000/login'
     e.preventDefault()
@@ -37,7 +39,7 @@ const LoginForm = () => {
           <input
             name='email' 
             value={ formData.email }
-            placeholder='enter an email '
+            placeholder='e.g., email@gmail.com '
             onChange = { e => handleChange(e)} 
           />
       </div>
@@ -46,7 +48,7 @@ const LoginForm = () => {
           <input
             name='password' 
             value={ formData.password }
-            placeholder='password '
+            placeholder='password'
             onChange = { e => handleChange(e)} 
           />
       </div>

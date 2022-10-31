@@ -2,7 +2,9 @@
 
 import { combineReducers as rootReducer } from "redux";
 import booklistReducer from './booklistReducer'
+import itemsReducer from "./itemsReducer";
 
 export default rootReducer({
-  books: booklistReducer
+  books: booklistReducer,
+  items: itemsReducer,
 })
